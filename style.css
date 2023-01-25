@@ -4,20 +4,28 @@
     vertical-align: top;
     padding: 19px;
 }
+
 .logo{
 width: 30%;
 padding: 1%;
-text-align: right;
+text-align: center;
 }
 .nav{
     width: 73%;
     padding: 1%;
 }
-.ul{
+.footerUL{
+    padding-inline-start: 0px;
+}
+/* .navUL{
+    padding-inline-start: 0px;
+    margin-left: auto;
+} */
+/* .ul{
     width: 50%;
     margin-left: auto;
 
-}
+} */
 
 .heroImg{
  height: 600px;
@@ -29,35 +37,58 @@ text-align: right;
 .content{
     width: 500px;
     margin: 0 auto;
-  
 }
 
 footer{
     background-color: #373738;
     padding: 4%;
+    display: flex;
+    justify-content: space-evenly;
+
 }
-.ul{
+
+/* ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+} */
+/* .ul{
     display: inline-block;
     vertical-align: top;
     padding: 1%;
-}
+} */
 
 .footext{
     color: white;
 }
 
 /* my ux skills  */
-/* .flexContainer{
+
+.flexContainer{
     display: flex;
     width: 33%;
     padding: 20px;
     flex-direction: row;
-
+    gap: 40px;
+    height: 300px;
+    
+}
+img{
+    height: 200px;
+}
+/* .h1Skills {
+    text-align: center;
 } */
-
+h1 {
+    text-align: center;
+}
 /* .skill1, .skill2, .skill3 {
     height: 100%;
-    width: 100%;
+    width: 33% 33%;
     display: flex;
     align-items: flex-end;
     margin-bottom: 20px;
@@ -73,9 +104,31 @@ footer{
   }
   
   .skill1, .skill2, .skill3 {
-    /* height: 100%;
-    width: 100%; */
-    /* display: flex;
+    height: 100%;
+    width: 100%; 
+    display: flex;
     align-items: flex-start;
     margin-bottom: 20px;
-  } */ 
+  } */
+
+  /* MY WORK SECTION */
+  .workGrid {
+    display: grid;
+    margin: 25px;
+    padding: 50px;
+    grid-template-rows:33% 33% 33%;
+    grid-template-columns: 35% 65%;
+    
+  }
+
+  /* media query */
+  @media only screen and (max-width: 600){
+    .flexContainer{
+        flex-direction: column;
+    }
+    .item1 .item2 .item3 .item4 .item5 .item6{
+        width: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+  }
